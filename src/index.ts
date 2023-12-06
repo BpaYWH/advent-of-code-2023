@@ -1,6 +1,6 @@
-import { taskA, taskB } from "./sln/day5";
+import { taskA, taskB } from "./sln/day7";
 
-// console.log("Task A");
-// taskA();
+console.log("Task A");
+taskA();
 console.log("Task B");
 taskB();
