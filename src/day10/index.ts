@@ -1,9 +1,9 @@
 import { data } from "./data";
 
-export const taskA = (): void => {
-
+export const taskA = () => {
+   return 0;
 }
 
-export const taskB = (): void => {
+export const taskB = () => {
 
 }
