@@ -1,4 +1,4 @@
-import { message } from "../input/d1";
+import { message } from "./data";
 
 const lines = message.split("\n");
 const numMap: Record<string, number>  = {

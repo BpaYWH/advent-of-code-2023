@@ -1,4 +1,4 @@
-import { input } from "../input/d4";
+import { input } from "./data";
 
 // Card 151: 86 73  7 35 71 23 61  4 47 15 |  2  5  4 34 29 71 12 31 81 36 80 35 27 23  8 42 88 47 52 99  7 67 61 91 16
 const getPoints = (line: string): number => {

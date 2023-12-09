@@ -1,4 +1,4 @@
-import { allSeeds, seed_soil, soil_fert, fert_water, water_light, light_temp, temp_humid, humid_loc } from "../input/d5";
+import { allSeeds, seed_soil, soil_fert, fert_water, water_light, light_temp, temp_humid, humid_loc } from "./data";
 
 // intervals: [[srcStart, srcEnd, destStart, destEnd]]
 

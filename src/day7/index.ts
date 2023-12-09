@@ -1,4 +1,4 @@
-import { input } from "../input/d7";
+import { input } from "./data";
 
 const map: {[card: string]: number} = {
    '2': 2,

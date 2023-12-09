@@ -1,4 +1,4 @@
-import { input } from "../input/d3";
+import { input } from "./data";
 
 const Symbols = new Set(
    [

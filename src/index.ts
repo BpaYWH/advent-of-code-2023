@@ -1,4 +1,4 @@
-import { taskA, taskB } from "./sln/day9";
+import { taskA, taskB } from "./day10";
 
 console.log("Task A");
 taskA();

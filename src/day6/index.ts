@@ -1,4 +1,4 @@
-import { dataA, dataB } from "../input/d6"
+import { dataA, dataB } from "./data"
 
 const findBeatCount = (time: number, dist: number): number => {
    let count = 0;

@@ -1,4 +1,4 @@
-import { data } from "../input/d2"
+import { data } from "./data"
 
 
 // red, green, blue

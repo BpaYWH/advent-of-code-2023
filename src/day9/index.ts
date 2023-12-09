@@ -1,4 +1,4 @@
-import { data } from "../input/d9";
+import { data } from "./data";
 
 
 const helper = (nums: number[]): number => {

@@ -1,4 +1,4 @@
-import { data } from "../input/d8";
+import { data } from "./data";
 
 const map: Record<string, number>  = {
    "L": 0,
