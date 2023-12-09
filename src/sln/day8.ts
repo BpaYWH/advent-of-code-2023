@@ -33,7 +33,6 @@ export const taskA = (): void => {
    while (curr !== goal) {
       curr = netMap[curr][map[inst[i % inst.length]]];
 
-      console.log(curr);
       count++;
       i++;
    }
