@@ -1,5 +1,81 @@
 import { data, example } from "./data";
 
+const realExpand = (space: string[][]): string[][] => {
+   const res = [];
+
+   // row expand
+   space.forEach(row => {
+      let isEmpty = true;
+
+      for (let i = 0; i < row.length; i++) {
+         if (row[i] === "#") {
+            isEmpty = false;
+            break;
+         }
+      }
+
+      if (isEmpty) {
+         res.push(row);
+      }
+      res.push(row);
+   })
+
+   // col expand
+   const cols = [];
+   for (let i = 0; i < space[0].length; i++) {
+      let isEmpty = true;
+
+      for (let j = 0; j < space.length; j++) {
+         if (space[j][i] === "#") {
+            isEmpty = false;
+            break;
+         }
+      }
+
+      if (isEmpty) {
+         cols.push(i);
+      }
+   }
+
+   let count = 0;
+   cols.forEach(col => {
+      res.forEach(row => {
+         row.splice(col + count, 0, ".");
+      });
+      count++;
+   });
+
+   return res;
+}
+
+export const taskAExpanded = (): number => {
+   let res = 0;
+   const lines = example.split('\n');
+   const space = lines.map(line => {
+      return line.split("");
+   });
+   const expanded = realExpand(space);
+   const stars = getStars(expanded);
+
+   for (let i = 0; i < stars.length; i++) {
+      for (let j = i + 1; j < stars.length; j++) {
+         let [x1, y1] = stars[i];
+         let [x2, y2] = stars[j];
+         if (x1 < x2) {
+            [x1, x2] = [x2, x1];
+         }
+         if (y1 < y2) {
+            [y1, y2] = [y2, y1];
+         }
+         const dist = x1 - x2 + y1 - y2;
+
+         res += dist;
+      }
+   }
+
+   return res;
+}
+
 const expand = (space: string[][]): number[][] => {
    const rows = [];
    const cols = [];
