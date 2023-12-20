@@ -1,4 +1,4 @@
-import { taskA, taskB } from "./day16";
+import { taskA, taskB } from "./day18";
 
 console.log("Task A:", taskA());
 
