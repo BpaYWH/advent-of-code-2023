@@ -1,5 +1,5 @@
-import { taskA, taskB } from "./day20";
+import { taskA, taskB } from "./day22";
 
-// console.log("Task A:", taskA());
+console.log("Task A:", taskA());
 
 console.log("Task B:", taskB());
