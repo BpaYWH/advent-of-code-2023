@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@types/heap": "^0.2.34",
-    "heap": "^0.2.7"
+    "heap": "^0.2.7",
+    "z3-solver": "^4.12.4"
   }
 }
